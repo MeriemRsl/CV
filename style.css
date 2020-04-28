@@ -1,10 +1,11 @@
+/*pour eviter l'espace autour de la page web */
 body {
     font-family: arial, serif, sans-serif;
     border: 1px solid black;
     margin: auto;
     max-width: 900px;
   }
-  
+  /*la partie photo (nav => accuil ,home)*/
   header {
     display: flex;
   }
@@ -27,44 +28,45 @@ body {
   #size_picture {
     width: 205px;
   }
-  
+  /*pour le nom et le dev  */
   #titre {
     width: 65%;
     line-height: 110%;
   }
-  
+  /*pour mon prenom */
   h1 {
     font-size: 250%;
     padding: 15% 0 0 7%;
     font-weight: lighter;
   }
-  
+  /*style => la partie de mon prenom */
   h1 > span {
     color: rgb(1, 221, 250);
     font-weight: bold;
     letter-spacing: 1.5px;
   }
-  
+  /*pour le nom dev (H2)*/
   h2 {
     color: black;
     padding-left: 7%;
     letter-spacing: 0.5px;
   }
+  /*style => la partie de nom dev*/
   h2 > span {
     text-decoration: underline;
     text-decoration-color: rgb(1, 221, 250);
     text-underline-position: under;
   }
-  
+  /*a propos de moi jusqu'a la fin*/
   main {
     display: flex;
   }
-  
+  /* le bloque a gauche*/
   #bloc_left {
     width: 35%;
     background-color: rgb(1, 221, 250);
   }
-  
+  /*bloque partie gauche pour tous les h3*/
   #bloc_left h3 {
     background-color: black;
     color: white;
@@ -74,14 +76,14 @@ body {
     font-size: 120%;
     border-right: 1px solid black;
   }
-  
+  /* partie adress*/
   address {
     font-style: normal;
     padding: 10% 15% 15% 15%;
     line-height: 1.2;
     color: black;
   }
-  
+  /* pour ne pas souligné les liens*/
   a {
     text-decoration: none;
     color: black;
@@ -94,6 +96,7 @@ body {
     text-align: justify;
     color: black;
   }
+  /* parie langues*/
   .info {
     padding: 7% 10% 25% 15%;
     display: flex;
@@ -107,12 +110,13 @@ body {
     color: black;
     line-height: 1.5;
   }
+  /* loisirs*/
   #icones {
     display: flex;
     flex-direction: row;
     padding: 6%;
   }
-  
+  /* mise en place des icones*/
   .icone {
     display: flex;
     justify-content: center;
@@ -124,12 +128,12 @@ body {
     color: white;
     margin: auto;
   }
-  
+  /* bloque droite*/
   #bloc_right {
     width: 65%;
     padding: 3.5% 0 2% 0;
   }
-  
+  /* tous les h3 dans le bloque droit */
   #bloc_right > h3 {
     color: #000;
     border-bottom: 1.3px solid rgb(1, 221, 250);
@@ -137,7 +141,7 @@ body {
     width: 90%;
     margin: auto;
   }
-  
+  /* la couleur des icones adroite*/
   h3 > i {
     color: #455a64;
     padding-right: 3%;
@@ -239,7 +243,7 @@ body {
       border-bottom: 1px solid white;
     }
   }
-  
+/* pour le rendre responsive*/
   @media all and (max-width: 500px) {
     h1 {
       font-size: 150%;
