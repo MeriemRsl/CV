@@ -115,7 +115,6 @@ body {
   #mes_information {
     height: 55%;
   }
-
   
   #icones {
     display: flex;
@@ -140,27 +139,18 @@ body {
     padding: 3.5% 0 2% 0;
   }
   /* tous les h3 dans le bloque droit */
-  .title > h3 {
-    display: inline; 
-    margin-left: 8px;
-  }
-
-    /* la couleur des icones adroite*/
-  .title > i {
-    color: #0aa7f0;
-    padding-right: 3%;
-  }
-
-  /* Le style du titre*/
-  .title {
-    padding-left: 16px; 
+  #bloc_right > section > h3 {
     color: #000;
     border-bottom: 1.3px solid rgb(1, 221, 250);
     padding-bottom: 1%;
     width: 90%;
     margin: auto;
   }
-
+  /* la couleur des icones adroite*/
+  h3 > i {
+    color: #455a64;
+    padding-right: 3%;
+  }
   
   #formation,
   #my_experience {
@@ -194,14 +184,11 @@ body {
     padding: 2% 0 0 5%;
     line-height: 1.5;
   }
-  
-  .recommandation2 {
-    width: 200px;
-    padding-left: 15%;
+
+  #recommandation > div{
+    margin-left: 16px;
   }
-
- 
-
+  
   
   /* Partie responsive */
   
