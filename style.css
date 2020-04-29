@@ -111,6 +111,12 @@ body {
     line-height: 1.5;
   }
   /* loisirs*/
+
+  #mes_information {
+    height: 55%;
+  }
+
+  
   #icones {
     display: flex;
     flex-direction: row;
@@ -134,18 +140,27 @@ body {
     padding: 3.5% 0 2% 0;
   }
   /* tous les h3 dans le bloque droit */
-  #bloc_right > h3 {
+  .title > h3 {
+    display: inline; 
+    margin-left: 8px;
+  }
+
+    /* la couleur des icones adroite*/
+  .title > i {
+    color: #0aa7f0;
+    padding-right: 3%;
+  }
+
+  /* Le style du titre*/
+  .title {
+    padding-left: 16px; 
     color: #000;
     border-bottom: 1.3px solid rgb(1, 221, 250);
     padding-bottom: 1%;
     width: 90%;
     margin: auto;
   }
-  /* la couleur des icones adroite*/
-  h3 > i {
-    color: #455a64;
-    padding-right: 3%;
-  }
+
   
   #formation,
   #my_experience {
@@ -184,6 +199,9 @@ body {
     width: 200px;
     padding-left: 15%;
   }
+
+ 
+
   
   /* Partie responsive */
   
