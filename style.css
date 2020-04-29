@@ -5,7 +5,7 @@ body {
     margin: auto;
     max-width: 900px;
   }
-  /*la partie photo (nav => accuil ,home)*/
+  /*la partie photo (nav => accueil ,home)*/
   header {
     display: flex;
   }
@@ -96,20 +96,7 @@ body {
     text-align: justify;
     color: black;
   }
-  /* parie langues*/
-  .info {
-    padding: 7% 10% 25% 15%;
-    display: flex;
-    justify-content: start;
-    text-align: justify;
-  }
-  ul {
-    line-height: 1.5;
-    text-align: justify;
-    align-items: center;
-    color: black;
-    line-height: 1.5;
-  }
+
   /* loisirs*/
 
   #mes_information {
@@ -140,15 +127,15 @@ body {
   }
   /* tous les h3 dans le bloque droit */
   #bloc_right > section > h3 {
-    color: #000;
+    color: rgba(0, 0, 0, 0.904);
     border-bottom: 1.3px solid rgb(1, 221, 250);
     padding-bottom: 1%;
     width: 90%;
     margin: auto;
   }
-  /* la couleur des icones adroite*/
+  /* la couleur des icones adroite formation, exp, recomm*/
   h3 > i {
-    color: #455a64;
+    color: #07abf7;
     padding-right: 3%;
   }
   
@@ -163,6 +150,7 @@ body {
   
   .circle {
     margin: 4% 2% 0 5%;
+    color:#07abf7
   }
   
   .text {
