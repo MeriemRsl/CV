@@ -16,7 +16,7 @@ body {
     padding: 5% 0 5% 0;
   }
   
-  #my_picture {
+  .my_picture {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -29,7 +29,7 @@ body {
     width: 205px;
   }
   /*pour le nom et le dev  */
-  #titre {
+  .titre {
     width: 65%;
     line-height: 110%;
   }
@@ -89,7 +89,7 @@ body {
     color: black;
   }
   
-  #informations > p {
+  .informations > p {
     padding: 10% 10% 35% 15%;
     line-height: 1.5;
     word-spacing: -0.2em;
@@ -99,7 +99,7 @@ body {
 
   /* loisirs*/
 
-  #mes_information {
+  .mes_information {
     height: 55%;
   }
   
@@ -190,7 +190,7 @@ body {
       padding: 2% 0 2% 0;
     }
   
-    #titre {
+    .titre {
       width: 95%;
       text-align: center;
     }
@@ -226,7 +226,7 @@ body {
       padding-bottom: 5%;
     }
   
-    #informations > p {
+    .informations > p {
       padding: 8% 15% 8% 15%;
     }
   
@@ -262,7 +262,7 @@ body {
   }
   
   @media all and (max-width: 355px) {
-    #my_picture {
+    .my_picture {
       width: 150px;
       height: 150px;
     }
