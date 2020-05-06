@@ -1,301 +1,297 @@
 /*pour eviter l'espace autour de la page web */
 body {
-    font-family: arial, serif, sans-serif;
-    border: 1px solid black;
-    margin: auto;
-    max-width: 900px;
-  }
-  /*la partie photo (nav => accueil ,home)*/
+  font-family: arial, serif, sans-serif;
+  border: 1px solid black;
+  margin: auto;
+  max-width: 900px;
+}
+/*la partie photo (nav => accueil ,home)*/
+header {
+  display: flex;
+}
+
+#picture {
+  background-color: rgb(1, 221, 250);
+  width: 35%;
+  padding: 5% 0 5% 0;
+}
+ .my_picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2.5px solid white;
+  overflow: hidden;
+  margin: auto;
+}
+ #size_picture {
+  width: 205px;
+}
+/*pour le nom et le dev  */
+.titre {
+  width: 65%;
+  line-height: 110%;
+}
+/*pour mon prenom */
+h1 {
+  font-size: 250%;
+  padding: 15% 0 0 7%;
+  font-weight: lighter;
+}
+/*style => la partie de mon prenom */
+h1 > span {
+  color: rgb(1, 221, 250);
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+/*pour le nom dev (H2)*/
+h2 {
+  color: black;
+  padding-left: 7%;
+  letter-spacing: 0.5px;
+}
+/*style => la partie de nom dev*/
+h2 > span {
+  text-decoration: underline;
+  text-decoration-color: rgb(1, 221, 250);
+  text-underline-position: under;
+}
+/*a propos de moi jusqu'a la fin*/
+main {
+  display: flex;
+}
+/* le bloque a gauche*/
+#bloc_left {
+  width: 35%;
+  background-color: rgb(1, 221, 250);
+}
+/*bloque partie gauche pour tous les h3*/
+#bloc_left h3 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 4%;
+  margin: 0;
+  font-size: 120%;
+  border-right: 1px solid black;
+}
+/* partie adress*/
+address {
+  font-style: normal;
+  padding: 10% 15% 15% 15%;
+  line-height: 1.2;
+  color: black;
+}
+/* pour ne pas souligné les liens*/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.informations > p {
+  padding: 10% 10% 35% 15%;
+  line-height: 1.5;
+  word-spacing: -0.2em;
+  text-align: justify;
+  color: black;
+}
+
+/* loisirs*/
+
+.mes_information {
+  height: 55%;
+}
+
+.icones {
+  display: flex;
+  flex-direction: row;
+  padding: 6%;
+}
+/* mise en place des icones*/
+.icone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: white;
+  margin: auto;
+}
+/* bloque droite*/
+#bloc_right {
+  width: 65%;
+  padding: 3.5% 0 2% 0;
+}
+/* tous les h3 dans le bloque droit */
+#bloc_right > section > h3 {
+  color: rgba(0, 0, 0, 0.76);
+  border-bottom: 1.3px solid rgb(1, 221, 250);
+  padding-bottom: 1%;
+  width: 90%;
+  margin: auto;
+}
+/* la couleur des icones adroite formation, exp, recomm*/
+h3 > i {
+  color: #07abf7;
+  padding-right: 3%;
+}
+
+#formation,
+#my_experience {
+  padding: 2% 0 2% 0;
+}
+
+.page {
+  display: flex;
+}
+
+.circle {
+  margin: 4% 2% 0 5%;
+  color:#07abf7
+}
+
+.text {
+  margin: 1% 0 0 1%;
+}
+
+.school {
+  padding-left: 15%;
+  width: 300px;
+}
+
+.pharagraphe {
+  font-size: 102%;
+  line-height: 1.5;
+}
+
+#recommandation {
+  display: flex;
+  padding: 2% 0 0 5%;
+  line-height: 1.5;
+}
+
+#recommandation > div:first-of-type{
+  margin-right: 16%;
+}
+
+ /* Partie responsive */
+
+@media all and (max-width: 800px) {
   header {
-    display: flex;
+    flex-direction:column;
   }
-  
+
   #picture {
-    background-color: rgb(1, 221, 250);
-    width: 35%;
-    padding: 5% 0 5% 0;
+    width: 100%;
+    padding: 2% 0 2% 0;
   }
-  
-  #my_picture {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 2.5px solid white;
-    overflow: hidden;
-    margin: auto;
-  }
-  
-  #size_picture {
-    width: 205px;
-  }
-  /*pour le nom et le dev  */
-  #titre {
-    width: 65%;
-    line-height: 110%;
-  }
-  /*pour mon prenom */
-  h1 {
-    font-size: 250%;
-    padding: 15% 0 0 7%;
-    font-weight: lighter;
-  }
-  /*style => la partie de mon prenom */
-  h1 > span {
-    color: rgb(1, 221, 250);
-    font-weight: bold;
-    letter-spacing: 1.5px;
-  }
-  /*pour le nom dev (H2)*/
-  h2 {
-    color: black;
-    padding-left: 7%;
-    letter-spacing: 0.5px;
-  }
-  /*style => la partie de nom dev*/
-  h2 > span {
-    text-decoration: underline;
-    text-decoration-color: rgb(1, 221, 250);
-    text-underline-position: under;
-  }
-  /*a propos de moi jusqu'a la fin*/
-  main {
-    display: flex;
-  }
-  /* le bloque a gauche*/
-  #bloc_left {
-    width: 35%;
-    background-color: rgb(1, 221, 250);
-  }
-  /*bloque partie gauche pour tous les h3*/
-  #bloc_left h3 {
-    background-color: black;
-    color: white;
+
+  .titre {
+    width: 95%;
     text-align: center;
-    padding: 4%;
-    margin: 0;
-    font-size: 120%;
-    border-right: 1px solid black;
-  }
-  /* partie adress*/
-  address {
-    font-style: normal;
-    padding: 10% 15% 15% 15%;
-    line-height: 1.2;
-    color: black;
-  }
-  /* pour ne pas souligné les liens*/
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  #informations > p {
-    padding: 10% 10% 35% 15%;
-    line-height: 1.5;
-    word-spacing: -0.2em;
-    text-align: justify;
-    color: black;
   }
 
-  /* loisirs*/
+  main {
+    flex-direction: column-reverse;
+  }
 
-  #mes_information {
-    height: 55%;
-  }
-  
-  #icones {
-    display: flex;
-    flex-direction: row;
-    padding: 6%;
-  }
-  /* mise en place des icones*/
-  .icone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    color: white;
-    margin: auto;
-  }
-  /* bloque droite*/
   #bloc_right {
-    width: 65%;
-    padding: 3.5% 0 2% 0;
-  }
-  /* tous les h3 dans le bloque droit */
-  #bloc_right > section > h3 {
-    color: rgba(0, 0, 0, 0.904);
-    border-bottom: 1.3px solid rgb(1, 221, 250);
-    padding-bottom: 1%;
     width: 90%;
     margin: auto;
   }
-  /* la couleur des icones adroite formation, exp, recomm*/
-  h3 > i {
-    color: #07abf7;
-    padding-right: 3%;
-  }
-  
-  #formation,
-  #my_experience {
-    padding: 2% 0 2% 0;
-  }
-  
-  .page {
-    display: flex;
-  }
-  
-  .circle {
-    margin: 4% 2% 0 5%;
-    color:#07abf7
-  }
-  
-  .text {
-    margin: 1% 0 0 1%;
-  }
-  
-  .school {
-    padding-left: 15%;
-    width: 300px;
-  }
-  
-  .pharagraphe {
-    font-size: 102%;
-    line-height: 1.5;
-  }
-  
-  #recommandation {
-    display: flex;
-    padding: 2% 0 0 5%;
-    line-height: 1.5;
+
+  #bloc_left {
+    width: 100%;
   }
 
-  #recommandation > div{
-    margin-left: 16px;
+  address {
+    padding: 5% 15% 5% 15%;
+    text-align: center;
+    font-weight: bold;
   }
-  
-  
-  /* Partie responsive */
-  
-  @media all and (max-width: 800px) {
-    header {
-      flex-direction: column;
-    }
-  
-    #picture {
-      width: 100%;
-      padding: 2% 0 2% 0;
-    }
-  
-    #titre {
-      width: 95%;
-      text-align: center;
-    }
-  
-    main {
-      flex-direction: column-reverse;
-    }
-  
-    #bloc_right {
-      width: 90%;
-      margin: auto;
-    }
-  
-    #bloc_left {
-      width: 100%;
-    }
-  
-    address {
-      padding: 5% 15% 5% 15%;
-      text-align: center;
-      font-weight: bold;
-    }
-  
-    #recommandation {
-      padding: 4% 0 4% 5%;
-    }
-  
-    h1 {
-      padding-top: 5%;
-    }
-  
-    h2 {
-      padding-bottom: 5%;
-    }
-  
-    #informations > p {
-      padding: 8% 15% 8% 15%;
-    }
-  
-    #bloc_left h3 {
-      border-right: none;
-      border-top: 1px solid white;
-      border-bottom: 1px solid white;
-    }
+
+  #recommandation {
+    padding: 4% 0 4% 5%;
   }
+
+  h1 {
+    padding-top: 5%;
+  }
+
+  h2 {
+    padding-bottom: 5%;
+  }
+
+  .informations > p {
+    padding: 8% 15% 8% 15%;
+  }
+
+  #bloc_left h3 {
+    border-right: none;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+}
 /* pour le rendre responsive*/
-  @media all and (max-width: 500px) {
-    h1 {
-      font-size: 150%;
-    }
-  
-    h2 {
-      font-size: 130%;
-    }
-  
-    .circle {
-      margin: 5% 2% 0 5%;
-    }
+@media all and (max-width: 500px) {
+  h1 {
+    font-size: 150%;
   }
-  
-  @media all and (max-width: 450px) {
-    #bloc_right > h3 {
-      font-size: 100%;
-    }
-  
-    .circle {
-      margin: 6% 2% 0 5%;
-    }
+
+  h2 {
+    font-size: 130%;
   }
-  
-  @media all and (max-width: 355px) {
-    #my_picture {
-      width: 150px;
-      height: 150px;
-    }
-  
-    #size_picture {
-      width: 150px;
-    }
-  
-    h2 {
-      font-size: 120%;
-    }
-  
-    .page {
-      flex-direction: column;
-    }
-  
-    .school {
-      margin-top: -10px;
-      padding-left: 0;
-      width: 250px;
-    }
-  
-    .circle {
-      margin-top: -17px;
-      visibility: hidden;
-    }
-  
-    #bloc_right > h3 {
-      width: 100%;
-    }
-  
-    .text {
-      margin: 0;
-    }
+
+  .circle {
+    margin: 5% 2% 0 5%;
   }
-  
+}
+
+@media all and (max-width: 450px) {
+  #bloc_right > h3 {
+    font-size: 100%;
+  }
+
+  .circle {
+    margin: 6% 2% 0 5%;
+  }
+}
+
+@media all and (max-width: 355px) {
+  .my_picture {
+    width: 150px;
+    height: 150px;
+  }
+
+  #size_picture {
+    width: 150px;
+  }
+
+  h2 {
+    font-size: 120%;
+  }
+
+  .page {
+    flex-direction: column;
+  }
+
+  .school {
+    margin-top: -10px;
+    padding-left: 0;
+    width: 250px;
+  }
+
+  .circle {
+    margin-top: -17px;
+    visibility: hidden;
+  }
+
+  #bloc_right > h3 {
+    width: 100%;
+  }
+
+  .text {
+    margin: 0;
+  }
+}
