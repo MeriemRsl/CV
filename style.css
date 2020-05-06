@@ -137,8 +137,8 @@ h3 > i {
   padding-right: 3%;
 }
 
-#formation,
-#my_experience {
+.formation,
+.my_experience {
   padding: 2% 0 2% 0;
 }
 
@@ -165,13 +165,13 @@ h3 > i {
   line-height: 1.5;
 }
 
-#recommandation {
+.recommandation {
   display: flex;
   padding: 2% 0 0 5%;
   line-height: 1.5;
 }
 
-#recommandation > div:first-of-type{
+.recommandation > div:first-of-type{
   margin-right: 16%;
 }
 
@@ -211,7 +211,7 @@ h3 > i {
     font-weight: bold;
   }
 
-  #recommandation {
+  .recommandation {
     padding: 4% 0 4% 5%;
   }
 
